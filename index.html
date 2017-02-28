@@ -13,11 +13,23 @@
   <section>
     <form action="">
       <label for="name">Nombre</label><br/>
-      <input type= name="" value=""><br><br>
+      <input type="text" id="name" value="" required><br><br>
       <label for="lastName">Apellido</label><br>
-      <input type="" name="" value=""><br><br>
+      <input type="text" id="lastName" value="" required><br><br>
       <label for="phone">Telefono</label><br>
-      <input type="text" name="" value=""><br><br>
+      <input type="text" id="phone" value="" required pattern="[0-9]{9}"><br><br>
+      <label for="car">Escoge tu carro para continuar</label><br><br>
+      <select name="car" id="car" required="required">
+        <option value="">Escoge tu carro</option>
+        <option value="0">Mercedes</option>
+        <option value="1">Volvo</option>
+        <option value="2">Audi</option>
+      </select><br><br>
+      <label for="mail">Email</label><br>
+      <input type="email" id="email" value="" required> <br><br>
+      <label for="contraseña">Crea tu contraseña</label><br>
+      <input type="pasword" id="contraseña" value="" required><br><br>
+      <input type="submit" name="" value="Send">
     </form>
   </section>
 </body>
